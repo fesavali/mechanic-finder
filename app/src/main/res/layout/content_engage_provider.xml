@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/select_preffred_provider"
+        android:textColor="@color/myWhite"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_providers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/common_google_signin_btn_text_dark_pressed"
+        android:entries="@array/serviceProviders"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/enter_service_required"
+        android:textColor="@color/myWhite"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_providers"
+        app:layout_constraintStart_toStartOf="@+id/spinner_providers"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_providers" />
+
+    <EditText
+        android:id="@+id/edt_servicer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/adamina"
+        android:hint="@string/enter_service_required"
+        android:inputType="textPersonName"
+        android:textColor="@color/myWhite"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/help_fix_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_phoner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/adamina"
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="phone"
+        android:textColor="@color/myWhite"
+        android:textColorLink="@color/colorPrimary"
+        android:textCursorDrawable="@color/help_fix_background"
+        app:layout_constraintEnd_toEndOf="@+id/edt_servicer"
+        app:layout_constraintStart_toStartOf="@+id/edt_servicer"
+        app:layout_constraintTop_toBottomOf="@+id/edt_servicer"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/bt_send_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/adamina"
+        android:text="@string/send_service_request"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/edt_phoner"
+        app:layout_constraintStart_toStartOf="@+id/edt_phoner"
+        app:layout_constraintTop_toBottomOf="@+id/edt_phoner" />
+
+    <Button
+        android:id="@+id/bt_logout_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/adamina"
+        android:text="@string/logout"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/bt_send_request"
+        app:layout_constraintStart_toStartOf="@+id/bt_send_request"
+        app:layout_constraintTop_toBottomOf="@+id/bt_send_request" />
+
+    <TextView
+        android:id="@+id/tv_s_mail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/adamina"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_logout_s" />
+
+    <ProgressBar
+        android:id="@+id/bar_request"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="160dp"
+        android:layout_height="123dp"
+        android:background="@color/drivers_comm_background"
+        android:elevation="@dimen/activity_vertical_margin"
+        android:progressDrawable="@color/colorPrimary"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ProgressBar
+        android:id="@+id/lod_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="188dp"
+        android:layout_height="161dp"
+        android:elevation="@dimen/activity_vertical_margin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="@string/register_as_a_service_provider"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/service_offered"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spin_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_dark_pressed"
+                android:entries="@array/services"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/company_name"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/enter_company_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/license_number"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/enter_license_number"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/phone_number"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_phoner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/enter_phone_number"
+                android:inputType="phone"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/location"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/enter_company_location"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:paddingTop="12sp"
+                android:text="@string/other_services"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_servicer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/service_1"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:id="@+id/edt_service1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/service_2"
+                android:inputType="textPersonName"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:id="@+id/edt_srv_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/enter_email_address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:id="@+id/edt_srv_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/choose_password"
+                android:inputType="textPassword"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <EditText
+                android:id="@+id/edt_srv_pass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableTint="@color/common_google_signin_btn_text_dark_focused"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textCursorDrawable="@color/common_google_signin_btn_text_dark_focused" />
+
+            <Button
+                android:id="@+id/btn_reg_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/adamina"
+                android:text="@string/register_company"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

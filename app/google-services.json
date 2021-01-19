@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "599504658797",
+    "firebase_url": "https://onroad-mech-final-f66ef.firebaseio.com",
+    "project_id": "onroad-mech-final-f66ef",
+    "storage_bucket": "onroad-mech-final-f66ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599504658797:android:dbb6fcd37d760d91b1fa64",
+        "android_client_info": {
+          "package_name": "com.felohscodes.onroadmech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599504658797-a7s2ejq3nboiq0c8vrffvldki673lsm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcsiFHV-SfGhioHhltRzszK_6Q6qvDKoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599504658797-a7s2ejq3nboiq0c8vrffvldki673lsm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E7E78"
+    tools:context=".ui.home.HomeFragment" >
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="clip_horizontal|center|fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_get_mech"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/request_repair_services"
+                android:elevation="8dp"
+                android:paddingEnd="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/mechanic" />
+
+            <ImageButton
+                android:id="@+id/btn_tow"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/request_towing_services"
+                android:elevation="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/towing" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_mech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/get_a_mechanic"
+                android:fontFamily="@font/adamina"
+                android:text="@string/get_a_mechanic"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/text_tow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/towing_services"
+                android:fontFamily="@font/adamina"
+                android:text="@string/towing_services"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_help"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_span="2"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/info_on_self_car_fix"
+                android:cropToPadding="false"
+                android:elevation="8dp"
+                android:foregroundGravity="fill_horizontal"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/help_fix" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_repair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:fontFamily="@font/adamina"
+                android:gravity="fill"
+                android:text="@string/car_repair_help"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_drivers"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_span="2"
+                android:contentDescription="@string/meet_fellow_drivers_here"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/drivers_comm" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_drivers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:contentDescription="@string/meet_fellow_drivers_here"
+                android:fontFamily="@font/adamina"
+                android:text="@string/drivers_community"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

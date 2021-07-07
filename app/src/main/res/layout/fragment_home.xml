@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageButton
+        android:id="@+id/btn_user"
+        android:layout_width="186dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/user_foreground"
+        android:contentDescription="@string/sends_user_to_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/sends_user_to_login"
+        android:fontFamily="@font/allan"
+        android:text="@string/users"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btn_user"
+        app:layout_constraintStart_toStartOf="@+id/btn_user"
+        app:layout_constraintTop_toBottomOf="@+id/btn_user"/>
+
+    <ImageButton
+        android:id="@+id/btn_mech"
+        android:layout_width="186dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/service_providers_page"
+        android:src="@drawable/mech_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/tv_user"
+        app:layout_constraintStart_toStartOf="@+id/tv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/service_providers_button"
+        android:fontFamily="@font/allan"
+        android:text="@string/service_providers"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mech"
+        app:layout_constraintStart_toStartOf="@+id/btn_mech"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mech" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

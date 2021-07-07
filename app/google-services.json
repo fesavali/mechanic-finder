@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "69904232639",
+    "firebase_url": "https://mech-finder.firebaseio.com",
+    "project_id": "mech-finder",
+    "storage_bucket": "mech-finder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69904232639:android:e83f73d43a3f0c3a7c560a",
+        "android_client_info": {
+          "package_name": "com.example.mechfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69904232639-fkqp6544stodem7ou9jcv7tg6bje4o3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAI2YEB9xMoaJj1I_ZltAHCRXrD0j9CWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69904232639-fkqp6544stodem7ou9jcv7tg6bje4o3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

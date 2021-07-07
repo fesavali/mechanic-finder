@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Mech Finder</string>
+    <string name="nav_header_title">Mech Finder</string>
+    <string name="nav_header_subtitle">mechfinder1@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">About App</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="choose_password">Choose Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="sends_user_to_login">Sends User To Login</string>
+    <string name="users">Users</string>
+    <string name="service_providers_page">Service providers page</string>
+    <string name="service_providers_button">Service providers Button</string>
+    <string name="service_providers">Service Providers</string>
+    <string name="title_activity_user_login">User Login</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="login">Login</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="register">Register</string>
+    <string name="title_activity_new_user">New User Registration</string>
+    <string name="title_activity_get_service">Get Service</string>
+    <string name="title_activity_service_providers">Service Providers</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="icesed_operator">1. Be a legally :icesed Operator</string>
+    <string name="individual_conduct">2. Mech Finder team is Note responsible for individual conduct</string>
+    <string name="work_ethics">3. Observe work ethics</string>
+    <string name="title_activity_service_provider_reg">Service Provider Reg</string>
+    <string name="title_activity_sevice_login">Sevice Provider Login</string>
+    <string name="title_activity_company_reg">Garage Registration</string>
+    <string name="garage_name">Garage Name:</string>
+    <string name="enter_garage_name">Enter Garage Name</string>
+    <string name="service_1">Service 1</string>
+    <string name="services_offered">Services Offered:</string>
+    <string name="enter_garage_phone_number">Enter Garage Phone Number</string>
+    <string name="phone">Phone:</string>
+    <string name="service_2">Service 2</string>
+    <string name="service_3">Service 3</string>
+    <string name="service_4">Service 4</string>
+    <string name="service_5">Service 5</string>
+    <string name="register_garage">Register Garage</string>
+    <string name="go">Engage Provider Service</string>
+    <string name="dd">Get Service</string>
+    <string name="title_activity_company_profile">Company Profile</string>
+    <string name="services">Services: </string>
+    <string name="logout">Logout</string>
+    <string name="map_type">Map Type</string>
+</resources>
